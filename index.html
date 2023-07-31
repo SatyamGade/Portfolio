@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="/android-chrome-192x192.png" />
+</head>
+
+<body>
+    <header>
+        <a href="#" class="nav-heading">Satyam's Portfolio</a>
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item nav-link">
+                    <a href="#" id="home">Home</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a onClick="document.getElementById('education').scrollIntoView();">Education</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a onClick="document.getElementById('skills').scrollIntoView();">Skills</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a onClick="document.getElementById('about').scrollIntoView();">About</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a onClick="document.getElementById('contact').scrollIntoView();">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="main">
+            <div class="intro">
+                <div class="intro-text">
+                    <span id="element"></span>
+                </div>
+                <div class="intro-img">
+                    <img class="img" src="./PngItem_1127587.png" alt="image">
+                </div>
+            </div>
+        </main>
+        <section class="info" >
+            <div id="education"></div>
+            <div class="breaking-point"></div>
+            <div class="education" >
+                <h1>Education</h1>
+                <div class="education-info">
+                    <div class="ssc-info">
+                        <h3>SSC</h3>
+                        <p>School: Vidayavikas Madhyamik Vidyalay, Latur.</p>
+                        <p>Percentage: 86.4%.</p>
+                    </div>
+                    <div class="hsc-info">
+                        <h3>HSC</h3>
+                        <p>College: Modern Arts & Science College, Latur.</p>
+                        <p>Percentage: 60%.</p>
+                    </div>
+                    <div class="degree-info">
+                        <h3>Undergraduate</h3>
+                        <p>College: Yeshwantrao Chavan College of Engineering, Nagpur.</p>
+                        <p>Degree: Bachelor of Technology (Final Year).</p>
+                        <p>Branch: Information Technology.</p>
+                        <p>CGPA: 7.2.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="skills"></div>
+            <div class="breaking-point"></div>
+            <div class="skills" >
+                <h1>Skills</h1>
+                <div class="skills-info">
+                    <div class="info-tech-skills">
+                        <h3>Technical Skills</h3>
+                        <ul class="tech-skills-list">
+                            <li class="tech-skill-name">Proficient in <span class="skill">C++</span> Programming
+                                Language.
+                            </li>
+                            <li class="tech-skill-name">Familiar with Web-Development Technology. Such as <span
+                                    class="skill">HTML CSS JavaScript</span>.</li>
+                            <li class="tech-skill-name">Strong understanding of <span class="skill">Data Structures and
+                                    Algorithms</span>.</li>
+                        </ul>
+                    </div>
+                    <div class="info-soft-skills">
+                        <h3>Soft Skills</h3>
+                        <ul class="soft-skills-list">
+                            <li class="soft-skill-name">Problem Solving.</li>
+                            <li class="soft-skill-name">Time Management.</li>
+                            <li class="soft-skill-name">Self-Motivated.</li>
+                            <li class="soft-skill-name">Teamwork.</li>
+                            <li class="soft-skill-name">Flexible</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="about"></div>
+            <div class="breaking-point"></div>
+            <div class="about">
+                <h1>About</h1>
+                <div class="about-info">
+                    <div class="about-details">
+                        <p>Name: Satyam Navnath Gade.</p>
+                        <p>Date of Birth: Jun 05 2002.</p>
+                        <p>Father's Name: Navnath Ramkisan Gade.</p>
+                        <p>Mother's Name: Kanta Navnath Gade.</p>
+                        <p>Permanent Address: At/Belgudwadi Post.Rohital Tq.Georai Dist.Beed, Maharashtra, 431127.</p>
+                        <p>Current Address: Near Yeshwantrao Chavan College of Engineering, Nagpur, 441110.</p>
+                    </div>
+                    <div class="intro-img">
+                        <img src="./img.jpg" class="self-img img intro-img" alt="image">
+                    </div>
+                </div>
+            </div>
+            <div id="contact"></div>
+            <div class="breaking-point"></div>
+            <div class="contact">
+                <h1>Contact</h1>
+                <div class="contact-info">
+                    <form action="https://formsubmit.co/satyagade8055@gmail.com" method="post">
+                        <div class="form-input">
+                            <input type="text" name="name" id="name" placeholder="Full name" required>
+                        </div>
+                        <div class="form-input">
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-input">
+                            <textarea name="text" id="text" cols="30" rows="10" placeholder="Your Meassage" required></textarea>
+                        </div>
+                        <div class="form-input">
+                            <button class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>Satyam's Portfolio &copy; 2023</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hi, My name is <span class="intro-name">Satyam Gade</span> and I am passionate about <span class="intro-coding">Coding</span>.'],
+            typeSpeed: 50,
+            showCursor: false
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* header / navbar */
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 13vh;
+    background-color: #06283D;
+    border-bottom: #DFF6FF 1px solid;
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-heading{
+    padding: 0 1em;
+    font-size: 2.3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: #DFF6FF;
+    text-transform: uppercase;
+}
+
+.nav-list{
+    display: flex;
+    gap: 2em;
+    margin: 1.5em;
+}
+
+.nav-link{
+    color: #DFF6FF;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#home{
+    color: #DFF6FF;
+}
+
+.nav-link:hover{
+    /* padding: .5em;
+    color: #06283D;
+    border-radius: 148px;
+    background-color: #DFF6FF;
+    transition: ease-out .1s; */
+    text-decoration: underline;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px;
+    background-color: #DFF6FF;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* main / introduction */
+
+.main{
+    min-height: 550px;
+    width: 100%;
+}
+
+.container{
+    background-color: #06283D;
+    color: #DFF6FF;
+    padding-top: 10em;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-text{
+    width: 50%;
+    padding: 0 1em;
+    font-size: 3rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+img{
+    max-width: 450px;
+    padding-right: 5em;
+    padding-top: 2em;
+}
+
+.intro-name,
+.intro-coding,
+.skill{
+    color:chartreuse;
+}
+
+/* Info Section */
+h1{
+    font-size: 2.5rem;
+    padding-top: 2em;
+    text-align: center;
+}
+
+#education,
+#about,
+#contact,
+#skills{
+    visibility: hidden;
+    width: 100%;
+    height: 80px;
+}
+
+h3{
+    padding: .5em 0;
+    font-size: 1.8rem;
+}
+
+.breaking-point{
+    width: 85%;
+    border-top: #47B5FF .1px solid;
+    margin: 0 auto;
+}
+
+.education,
+.about,
+.skills,
+.contact{
+    min-height: 450px;
+}
+
+.education-info,
+.skills-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 6em 2em;
+}
+
+.ssc-info,
+.hsc-info,
+.degree-info{
+    font-size: 1.3rem;
+    width: 31%;
+}
+
+.hsc-info,
+.ssc-info,
+.info-tech-skills{
+    border-right: #256D85 .5px solid;
+}
+
+
+.ssc-info p,
+.hsc-info p,
+.degree-info p,
+.tech-skills-list li,
+.soft-skills-list li,
+.about-details p{
+    padding-bottom: .5em;
+}
+
+.tech-skills-list li,
+.soft-skills-list li{
+    list-style: circle;
+}
+
+
+.info-tech-skills,
+.info-soft-skills{
+    font-size: 1.3rem;
+    width: 50%;
+    padding:0 5em;
+}
+
+.about-details p{
+    font-size: 1.3rem;
+    padding-left: 3em;
+}
+
+.about-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-details{
+    width: 48%;
+}
+
+.self-img{
+    border-radius: 500px;
+}
+
+.contact-info{
+    margin-top: 3em;
+}
+
+#name,
+#email{
+    width: 500px;
+    height: 30px;
+}
+
+#text{
+    width: 500px;
+}
+
+form{
+    text-align: center;
+}
+
+.form-input{
+    padding-bottom: 2em;
+}
+
+.btn{
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+/* footer */
+
+.footer-content{
+    background-color: #06283D;
+    color: #DFF6FF;
+    width: 100%;
+    text-align: center;
+    border-top: #DFF6FF 1px solid;
+}
+
+.footer-content p{
+    padding: 1em;
+}
+
+
+/* responsiveness */
+@media (max-width: 1020px) {
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #06283D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition:ease-in-out .3s;
+        border-top: #DFF6FF 1px solid;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    /* Nav-Menu Bar */
+
+    .hamburger{
+        display: block;
+        margin-right: 1em;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media (max-width:1020px){
+    .intro-text{
+        font-size: 2.5rem;
+    }
+
+    .education-info,
+    .skills-info{
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .hsc-info,
+    .ssc-info,
+    .info-tech-skills{
+        border: none;
+    }
+
+    .hsc-info,
+    .ssc-info,
+    .degree-info,
+    .info-soft-skills,
+    .info-tech-skills,
+    .about-details{
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-soft-skills,
+    .info-tech-skills{
+        padding: 0 ;
+    }
+
+    .info-soft-skills li,
+    .info-tech-skills li{
+        list-style: none;
+    }
+
+    .about-info{
+        flex-direction: column-reverse;
+        padding: 4em 1em;
+    }
+    .about-details{
+        padding-top: 3em;
+    }
+    
+    .about-details p{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 812px){
+    .intro{
+        flex-direction: column-reverse;
+    }
+
+    .intro-text{
+        padding: 2em 1em;
+        width: 100%;
+    }
+
+    .img{
+        padding: 0 2em;
+        width: 400px;
+    }
+
+    h1{
+        font-size: 2.2rem;
+    }
+
+    h3{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:495px) {
+    .nav-heading{
+        font-size: 2rem;
+    }
+
+    .img{
+        width: 300px;
+    }
+
+    .intro-text{
+        font-size: 2rem;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.4rem;
+    }
+}
